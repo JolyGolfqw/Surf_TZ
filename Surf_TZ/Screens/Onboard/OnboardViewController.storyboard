@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I8l-5A-QDZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboard View Controller-->
+        <scene sceneID="f9e-hA-YQu">
+            <objects>
+                <viewController id="I8l-5A-QDZ" customClass="OnboardViewController" customModule="Surf_TZ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W8S-B6-XOh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQK-fw-Er7">
+                                <rect key="frame" x="75" y="598" width="264" height="84"/>
+                                <color key="backgroundColor" red="1" green="0.96470588239999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="7fL-Nt-4S1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                <state key="normal" title="ПОГНАЛИ!">
+                                    <color key="titleColor" red="0.2004494667" green="0.21922117469999999" blue="0.23921895030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToMain:" destination="I8l-5A-QDZ" eventType="touchUpInside" id="YB7-of-s09"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приветствую! Рад представить вам свой тестовый проект, надеюсь вам понравится, приятного просмотра! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tU9-9v-rrd">
+                                <rect key="frame" x="20" y="309" width="374" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="yWr-HT-qF4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WvY-AV-beE"/>
+                        <color key="backgroundColor" red="0.2004494667" green="0.21922117469999999" blue="0.23921895030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tU9-9v-rrd" firstAttribute="leading" secondItem="W8S-B6-XOh" secondAttribute="leading" constant="20" id="Abj-qv-fVg"/>
+                            <constraint firstItem="tU9-9v-rrd" firstAttribute="centerX" secondItem="W8S-B6-XOh" secondAttribute="centerX" id="CeS-jz-DZ8"/>
+                            <constraint firstItem="jQK-fw-Er7" firstAttribute="leading" secondItem="WvY-AV-beE" secondAttribute="leading" constant="75" id="X3V-zG-gJ7"/>
+                            <constraint firstItem="tU9-9v-rrd" firstAttribute="centerX" secondItem="jQK-fw-Er7" secondAttribute="centerX" id="gvE-M9-8UG"/>
+                            <constraint firstItem="WvY-AV-beE" firstAttribute="bottom" secondItem="jQK-fw-Er7" secondAttribute="bottom" constant="180" id="hVg-rH-8MK"/>
+                            <constraint firstAttribute="trailing" secondItem="tU9-9v-rrd" secondAttribute="trailing" constant="20" id="jAh-cT-AwQ"/>
+                            <constraint firstItem="tU9-9v-rrd" firstAttribute="top" secondItem="WvY-AV-beE" secondAttribute="top" constant="265" id="zc8-br-qQQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goButtonOutlet" destination="jQK-fw-Er7" id="UoD-P1-uiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4z4-5z-9Oe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342.02898550724638" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>

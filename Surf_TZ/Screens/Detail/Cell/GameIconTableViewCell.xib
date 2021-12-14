@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="263" id="KGk-i7-Jjw" customClass="GameIconTableViewCell" customModule="Surf_TZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="263"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTr-df-XyR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="263"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vWl-62-Pbx">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="263"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vWl-62-Pbx" firstAttribute="leading" secondItem="gTr-df-XyR" secondAttribute="leading" id="6GA-A3-qrM"/>
+                            <constraint firstAttribute="height" constant="263" id="Whk-ef-1Fn"/>
+                            <constraint firstAttribute="bottom" secondItem="vWl-62-Pbx" secondAttribute="bottom" id="XxW-ud-VZl"/>
+                            <constraint firstItem="vWl-62-Pbx" firstAttribute="top" secondItem="gTr-df-XyR" secondAttribute="top" id="bRw-qb-sir"/>
+                            <constraint firstAttribute="trailing" secondItem="vWl-62-Pbx" secondAttribute="trailing" id="q9K-gN-ejF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gTr-df-XyR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9TS-A2-3og"/>
+                    <constraint firstItem="gTr-df-XyR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VD6-EZ-qnb"/>
+                    <constraint firstAttribute="bottom" secondItem="gTr-df-XyR" secondAttribute="bottom" id="VSM-NJ-3HI"/>
+                    <constraint firstAttribute="trailing" secondItem="gTr-df-XyR" secondAttribute="trailing" id="giT-Pp-q3j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconGame" destination="vWl-62-Pbx" id="D9y-4R-dV0"/>
+                <outlet property="wrapperView" destination="gTr-df-XyR" id="7D9-cd-cV8"/>
+            </connections>
+            <point key="canvasLocation" x="159.42028985507247" y="159.04017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

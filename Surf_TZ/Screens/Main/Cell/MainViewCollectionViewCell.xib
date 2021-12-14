@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VmP-dU-Xd8" customClass="MainViewCollectionViewCell" customModule="Surf_TZ" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fL2-Y3-MWC">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDR-sv-GhF">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHc-hM-IJR">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="130"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="1MR-vd-oTL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="World of tanks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kr-EZ-0il">
+                                <rect key="frame" x="8" y="140" width="154" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gCM-Xx-ZfR">
+                                <rect key="frame" x="147" y="217" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="aB1-M8-E88"/>
+                                    <constraint firstAttribute="width" constant="15" id="loN-pn-0cn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you like blowing up tanks, with a quick and intense game style you will love this game!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3f-SZ-Ow4">
+                                <rect key="frame" x="8" y="168" width="154" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shooter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xX-hl-CTq">
+                                <rect key="frame" x="75" y="217" width="59" height="15"/>
+                                <color key="backgroundColor" red="0.092469565569999995" green="0.67232406140000001" blue="0.93729072810000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="3C2-vS-e8v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <color key="textColor" red="0.2004494667" green="0.21922117469999999" blue="0.23921895030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2004494667" green="0.21922117469999999" blue="0.23921895030000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2kr-EZ-0il" secondAttribute="trailing" constant="8" id="09d-Ch-86Q"/>
+                            <constraint firstItem="b3f-SZ-Ow4" firstAttribute="top" secondItem="2kr-EZ-0il" secondAttribute="bottom" constant="10" id="5Uv-Ga-r6a"/>
+                            <constraint firstItem="2kr-EZ-0il" firstAttribute="leading" secondItem="sDR-sv-GhF" secondAttribute="leading" constant="8" id="770-jw-IZV"/>
+                            <constraint firstItem="gCM-Xx-ZfR" firstAttribute="leading" secondItem="9xX-hl-CTq" secondAttribute="trailing" constant="13" id="7UE-vV-t3X"/>
+                            <constraint firstAttribute="trailing" secondItem="yHc-hM-IJR" secondAttribute="trailing" id="7iz-oW-8B0"/>
+                            <constraint firstItem="yHc-hM-IJR" firstAttribute="top" secondItem="sDR-sv-GhF" secondAttribute="top" id="8tJ-c1-GWr"/>
+                            <constraint firstAttribute="trailing" secondItem="b3f-SZ-Ow4" secondAttribute="trailing" constant="8" id="Cvl-Ob-Jhy"/>
+                            <constraint firstItem="9xX-hl-CTq" firstAttribute="leading" secondItem="sDR-sv-GhF" secondAttribute="leading" constant="75" id="a2U-vm-CCF"/>
+                            <constraint firstAttribute="trailing" secondItem="gCM-Xx-ZfR" secondAttribute="trailing" constant="8" id="fuL-X0-e9r"/>
+                            <constraint firstItem="yHc-hM-IJR" firstAttribute="leading" secondItem="sDR-sv-GhF" secondAttribute="leading" id="lOA-5p-bey"/>
+                            <constraint firstItem="2kr-EZ-0il" firstAttribute="top" secondItem="yHc-hM-IJR" secondAttribute="bottom" constant="10" id="pws-Fm-97D"/>
+                            <constraint firstItem="b3f-SZ-Ow4" firstAttribute="leading" secondItem="sDR-sv-GhF" secondAttribute="leading" constant="8" id="qvV-bt-OHx"/>
+                            <constraint firstAttribute="bottom" secondItem="9xX-hl-CTq" secondAttribute="bottom" constant="8" id="tQn-7c-TyL"/>
+                            <constraint firstItem="9xX-hl-CTq" firstAttribute="top" secondItem="b3f-SZ-Ow4" secondAttribute="bottom" constant="8" symbolic="YES" id="toj-Tf-d6K"/>
+                            <constraint firstAttribute="bottom" secondItem="gCM-Xx-ZfR" secondAttribute="bottom" constant="8" id="zCI-fe-Wiy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sDR-sv-GhF" firstAttribute="top" secondItem="fL2-Y3-MWC" secondAttribute="top" id="BCb-4L-Zrq"/>
+                    <constraint firstAttribute="bottom" secondItem="sDR-sv-GhF" secondAttribute="bottom" id="cIu-ky-2op"/>
+                    <constraint firstItem="sDR-sv-GhF" firstAttribute="leading" secondItem="fL2-Y3-MWC" secondAttribute="leading" id="dMv-vH-wVc"/>
+                    <constraint firstAttribute="trailing" secondItem="sDR-sv-GhF" secondAttribute="trailing" id="nsA-W0-nuh"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="162" height="163"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="b3f-SZ-Ow4" id="QAh-2K-q1G"/>
+                <outlet property="genreLabel" destination="9xX-hl-CTq" id="MCU-ho-gQO"/>
+                <outlet property="iconGame" destination="yHc-hM-IJR" id="RPJ-P1-75L"/>
+                <outlet property="titleGameLabel" destination="2kr-EZ-0il" id="vgi-Pi-gJx"/>
+                <outlet property="wrapperView" destination="sDR-sv-GhF" id="jD3-T1-HY8"/>
+            </connections>
+            <point key="canvasLocation" x="-308.69565217391306" y="-12.053571428571429"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="windowsLogo" width="2048" height="2048"/>
+    </resources>
+</document>
