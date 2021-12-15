@@ -54,20 +54,7 @@ final class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.navigationBar.prefersLargeTitles = true
-        
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = #colorLiteral(red: 0.1579894722, green: 0.173040539, blue: 0.1941367686, alpha: 1)
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        
-        navigationItem.title = "Games"
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.compactAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationSettings()
     }
 }
 
@@ -135,6 +122,23 @@ private extension MainViewController {
         } else {
             return
         }
+    }
+    
+    private func navigationSettings() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = #colorLiteral(red: 0.1579894722, green: 0.173040539, blue: 0.1941367686, alpha: 1)
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        navigationItem.title = "Games"
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     private func setupUICollectionView() {
