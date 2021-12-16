@@ -71,7 +71,7 @@ extension DetailViewController {
         navigationItem.title = gameModel.title
     }
     
-    private func setupUITableView() {
+    func setupUITableView() {
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(tableView)

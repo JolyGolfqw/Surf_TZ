@@ -90,13 +90,13 @@ extension MainViewController: UICollectionViewDelegate {
 // MARK: - Setup
 private extension MainViewController {
     
-    private func setup() {
+    func setup() {
         setupUICollectionView()
         getGamesData()
         self.view.backgroundColor = #colorLiteral(red: 0.1579894722, green: 0.173040539, blue: 0.1941367686, alpha: 1)
     }
     
-    private func getGamesData() {
+    func getGamesData() {
         let urlString = "https://www.freetogame.com/api/games"
         networkDataFetcher.fetchTracks(urlString: urlString) { result in
             DispatchQueue.main.async {
@@ -106,13 +106,13 @@ private extension MainViewController {
         }
     }
     
-    private func goToDetailViewController(_ indexPath: IndexPath) {
+    func goToDetailViewController(_ indexPath: IndexPath) {
         let detailViewController = DetailViewController()
         detailViewController.gameModel = self.gamesModel[indexPath.row]
         navigationController?.pushViewController(detailViewController, animated: true)
     }
     
-    private func emptyGamesData() {
+    func emptyGamesData() {
         if DataManager.shared.addGames.isEmpty {
             let alert = UIAlertController(title: "Данные не загружены!", message: "Пожалуйста подключитесь к сети и перезапустите приложение!", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default)
@@ -124,7 +124,7 @@ private extension MainViewController {
         }
     }
     
-    private func navigationSettings() {
+    func navigationSettings() {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let appearance = UINavigationBarAppearance()
@@ -141,7 +141,7 @@ private extension MainViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    private func setupUICollectionView() {
+    func setupUICollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
         

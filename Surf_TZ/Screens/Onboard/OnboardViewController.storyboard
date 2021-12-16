@@ -48,6 +48,7 @@
                             <constraint firstItem="tU9-9v-rrd" firstAttribute="centerX" secondItem="jQK-fw-Er7" secondAttribute="centerX" id="gvE-M9-8UG"/>
                             <constraint firstItem="WvY-AV-beE" firstAttribute="bottom" secondItem="jQK-fw-Er7" secondAttribute="bottom" constant="180" id="hVg-rH-8MK"/>
                             <constraint firstAttribute="trailing" secondItem="tU9-9v-rrd" secondAttribute="trailing" constant="20" id="jAh-cT-AwQ"/>
+                            <constraint firstItem="WvY-AV-beE" firstAttribute="trailing" secondItem="jQK-fw-Er7" secondAttribute="trailing" constant="75" id="moH-MO-Och"/>
                             <constraint firstItem="tU9-9v-rrd" firstAttribute="top" secondItem="WvY-AV-beE" secondAttribute="top" constant="265" id="zc8-br-qQQ"/>
                         </constraints>
                     </view>
